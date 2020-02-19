@@ -3,7 +3,7 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>com.transportexchangegroup</groupId>
     <artifactId>cx-static-code-analysis-config</artifactId>
-    <version>1.0</version>
+    <version>1.1-SNAPSHOT</version>
 
     <build>
         <plugins>
@@ -30,7 +30,7 @@
     <scm>
         <developerConnection>scm:git:https://github.com/transport-exchange-group/cx-static-code-analysis-config</developerConnection>
         <connection>scm:git:https://github.com/transport-exchange-group/cx-static-code-analysis-config</connection>
-      <tag>cx-static-code-analysis-config-1.0</tag>
+      <tag>HEAD</tag>
   </scm>
 
 </project>
