@@ -1,0 +1,13 @@
+# Intellij
+.idea
+*.iml
+
+# Target
+target/
+*.log
+
+# Package Files
+*.jar
+*.zip
+*.tar.gz
+*.rar
