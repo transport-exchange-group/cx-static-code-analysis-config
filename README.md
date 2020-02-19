@@ -13,11 +13,6 @@ To use it, configure your maven plugins like so:
     <version>3.1.0</version>
     <dependencies>
         <dependency>
-            <groupId>com.transportexchangegroup</groupId>
-            <artifactId>cx-static-code-analysis-config</artifactId>
-            <version>1.0</version>
-        </dependency>
-        <dependency>
             <groupId>com.puppycrawl.tools</groupId>
             <artifactId>checkstyle</artifactId>
             <version>8.28</version>
@@ -32,7 +27,7 @@ To use it, configure your maven plugins like so:
         </execution>
     </executions>
     <configuration>
-        <configLocation>cx-checkstyle.xml</configLocation>
+        <configLocation>https://raw.githubusercontent.com/transport-exchange-group/cx-static-code-analysis-config/master/cx-checkstyle.xml</configLocation>
         <consoleOutput>true</consoleOutput>
         <enableRulesSummary>false</enableRulesSummary>
         <violationSeverity>warning</violationSeverity>
@@ -58,13 +53,6 @@ the configuration among each sub-module.
     <groupId>org.apache.maven.plugins</groupId>
     <artifactId>maven-pmd-plugin</artifactId>
     <version>3.12.0</version>
-    <dependencies>
-        <dependency>
-            <groupId>com.transportexchangegroup</groupId>
-            <artifactId>cx-static-code-analysis-config</artifactId>
-            <version>1.0</version>
-        </dependency>
-    </dependencies>
     <executions>
         <execution>
             <phase>validate</phase>
@@ -77,7 +65,7 @@ the configuration among each sub-module.
         <analysisCache>true</analysisCache>
         <linkXRef>false</linkXRef>
         <rulesets>
-            <ruleset>cx-pmd-ruleset.xml</ruleset>
+            <ruleset>https://raw.githubusercontent.com/transport-exchange-group/cx-static-code-analysis-config/master/cx-pmd-ruleset.xml</ruleset>
         </rulesets>
         <failOnViolation>true</failOnViolation>
         <printFailingErrors>true</printFailingErrors>
